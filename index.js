@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const { MongoClient } = require('mongodb');
 
 const drivers = [
@@ -14,10 +15,18 @@ console.log("✅ New Driver Added:", drivers[drivers.length - 1]);
 
 async function main() {
     const uri = "mongodb://localhost:27017";
+=======
+const {MongoClient } = require('mongodb');
+
+async function main() {
+    // Replace <connection-string> with your MongoDB URI 
+    const uri= "mongodb://localhost:27017"
+>>>>>>> febdd7c (Add NodeJS script and MongoDB connection)
     const client = new MongoClient(uri);
 
     try {
         await client.connect();
+<<<<<<< HEAD
         console.log("✅ Connected to MongoDB!");
 
         const db = client.db("testDB");
@@ -69,4 +78,24 @@ async function main() {
     }
 }
 
+=======
+        console.log("Connected to MongoDB!");
+        
+        const db = client.db("testDB");
+        const collection = db.collection("users");
+        
+        // Insert a document
+        await collection.insertOne({ name: "Alice", age: 25 }); 
+        console.log("Document inserted!");
+        
+        // Query the document
+        const result = await collection. findOne({ name: "Alice" }); 
+        console.log("Query result:", result);
+    } catch (err) {
+    console.error("Error:", err);
+} finally {
+    await client.close();
+}
+}
+>>>>>>> febdd7c (Add NodeJS script and MongoDB connection)
 main();

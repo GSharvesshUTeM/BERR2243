@@ -1,27 +1,24 @@
 {
-  "name": "kavi",
+  "name": "code",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000k\u0000a\u0000v\u0000i\u0000\r\u0000 \u0000",
+  "description": "BERR2243 Azure Node.js App",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kaviyarasan47/kavi.git"
+    "url": "git+https://github.com/GSharvesshUTeM/BERR2243.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Sharvessh",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Kaviyarasan47/kavi/issues"
+    "url": "https://github.com/GSharvesshUTeM/BERR2243/issues"
   },
-  "homepage": "https://github.com/Kaviyarasan47/kavi#readme",
+  "homepage": "https://github.com/GSharvesshUTeM/BERR2243#readme",
   "dependencies": {
     "express": "^5.1.0",
     "mongodb": "^6.15.0"
-  },
-  "devDependencies": {
-    "eslint": "^9.23.0"
   }
 }
